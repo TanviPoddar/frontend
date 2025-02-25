@@ -1,23 +1,21 @@
-import logo from './logo.svg';
+import React from 'react';
+import IDE from './IDE';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <h1>Intelligent IDE</h1>
+        <p>AI-Powered Developer Productivity</p>
+        <p>Scroll down to start developing!!</p>
       </header>
+      <main className="App-main">
+        <IDE />
+      </main>
+      <footer className="App-footer">
+        <p>&copy; {new Date().getFullYear()} Intelligent IDE - Powered by OpenAI API</p>
+      </footer>
     </div>
   );
 }
